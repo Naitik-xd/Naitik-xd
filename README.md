@@ -59,30 +59,11 @@ const naitik = {
 
 <br>
 
-### 📊 **GitHub Metrics & Contributions**
+### 📊 **GitHub Activity**
 
 <div align="center">
   <a href="https://github.com/Naitik-xd">
     <img src="https://github-readme-activity-graph.vercel.app/graph?username=Naitik-xd&bg_color=0D1117&color=FF6B00&line=FFB800&point=FFFFFF&area=true&hide_border=true" alt="Activity Graph" width="85%" />
-  </a>
-  <br><br>
-  <table>
-    <tr>
-      <td align="center">
-        <a href="https://github.com/Naitik-xd">
-          <img src="https://github-readme-stats.vercel.app/api?username=Naitik-xd&show_icons=true&theme=tokyonight&title_color=FF6B00&text_color=FFFFFF&icon_color=FFB800&bg_color=0D1117&hide_border=true" alt="GitHub Stats" />
-        </a>
-      </td>
-      <td align="center">
-        <a href="https://github.com/Naitik-xd">
-          <img src="https://streak-stats.demolab.com/?user=Naitik-xd&theme=tokyonight&ring=FF6B00&fire=FFB800&currStreakNum=FFB800&bg_color=0D1117&hide_border=true" alt="GitHub Streak" />
-        </a>
-      </td>
-    </tr>
-  </table>
-  <br>
-  <a href="https://github.com/Naitik-xd">
-    <img src="https://github-profile-trophy.vercel.app/?username=Naitik-xd&theme=tokyonight&no-bg=true&no-frame=true&margin-w=15&margin-h=15" alt="Trophies" />
   </a>
 </div>
 
@@ -96,30 +77,21 @@ const naitik = {
 
 ### 🚀 **Featured Projects**
 
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <h3>🗺️ <a href="https://na1t1k-hackathon3.vercel.app">StageMap</a></h3>
-      <p>Hyperlocal event discovery platform for tier-2/3 India.</p>
-      <p><code>Supabase</code> <code>Leaflet.js</code> <code>Gemini 2.5</code></p>
-    </td>
-    <td width="50%" align="center">
-      <h3>💍 <a href="https://luminae-bay.vercel.app">LUMINAE</a></h3>
-      <p>Delhi bridal booking ecosystem + AI chatbot LUMI.</p>
-      <p><code>Supabase</code> <code>Gemini</code> <code>Resend</code></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <h3>🎨 <a href="https://na1t1k.vercel.app">Portfolio (3D Web)</a></h3>
-      <p>Immersive Three.js particles + "Ask Naitik" AI chatbot.</p>
-      <p><code>React</code> <code>GSAP</code> <code>Gemini</code></p>
-    </td>
-    <td width="50%" align="center">
-      <!-- Empty space for layout balance -->
-    </td>
-  </tr>
-</table>
+> ### 🗺️ [StageMap](https://na1t1k-hackathon3.vercel.app)
+> **Hyperlocal event discovery platform for tier-2/3 India.** <br>
+> <code>Supabase</code> <code>Leaflet.js</code> <code>Gemini 2.5</code>
+
+<br>
+
+> ### 💍 [LUMINAE](https://luminae-bay.vercel.app)
+> **Delhi bridal booking ecosystem + AI chatbot LUMI.** <br>
+> <code>Supabase</code> <code>Gemini</code> <code>Resend</code>
+
+<br>
+
+> ### 🎨 [Portfolio (3D Web)](https://na1t1k.vercel.app)
+> **Immersive Three.js particles + "Ask Naitik" AI chatbot.** <br>
+> <code>React</code> <code>GSAP</code> <code>Gemini</code>
 
 <br>
 
@@ -134,7 +106,6 @@ const naitik = {
 > 🥇 **HackDevengers 10** — Built StageMap <br>
 > 🎖️ **MDI Gurugram Photography** — Ranked 4th out of 135 entries <br>
 > 🌩️ **Google Cloud Skills Boost** — Gold League · 100+ Badges <br>
-> ⚡ **Frontend Battle 3.0** — IIT Bhubaneswar <br>
 > 🚀 **SuperXgen AI Startup Buildathon 2026** — Built LUMINAE
 
 <br>
