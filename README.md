@@ -128,9 +128,6 @@ const naitik = {
   <a href="https://x.com/NA1T1Kxd">
     <img src="https://img.shields.io/badge/X-NA1T1Kxd-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
   </a>
-  <a href="https://instagram.com/NAITIK.xd">
-    <img src="https://img.shields.io/badge/Instagram-NAITIK.xd-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
-  </a>
   <br><br>
   <a href="mailto:naitik.270810@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-naitik.270810@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
