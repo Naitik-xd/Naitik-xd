@@ -70,19 +70,19 @@ const naitik = {
     <tr>
       <td align="center">
         <a href="https://github.com/Naitik-xd">
-          <img src="https://github-readme-stats.vercel.app/api?username=Naitik-xd&show_icons=true&theme=tokyonight&title_color=FF6B00&text_color=FFFFFF&icon_color=FFB800&bg_color=0D1117&border_color=333333&hide_border=false" alt="GitHub Stats" />
+          <img src="https://github-readme-stats.vercel.app/api?username=Naitik-xd&show_icons=true&theme=tokyonight&title_color=FF6B00&text_color=FFFFFF&icon_color=FFB800&bg_color=0D1117&hide_border=true" alt="GitHub Stats" />
         </a>
       </td>
       <td align="center">
         <a href="https://github.com/Naitik-xd">
-          <img src="https://streak-stats.demolab.com/?user=Naitik-xd&theme=dark&ring=FF6B00&fire=FFB800&currStreakNum=FFB800&bg_color=0D1117&border=333333" alt="GitHub Streak" />
+          <img src="https://streak-stats.demolab.com/?user=Naitik-xd&theme=tokyonight&ring=FF6B00&fire=FFB800&currStreakNum=FFB800&bg_color=0D1117&hide_border=true" alt="GitHub Streak" />
         </a>
       </td>
     </tr>
   </table>
   <br>
   <a href="https://github.com/Naitik-xd">
-    <img src="https://github-profile-trophy.vercel.app/?username=Naitik-xd&theme=tokyonight&no-bg=false&no-frame=false&margin-w=15&margin-h=15" alt="Trophies" />
+    <img src="https://github-profile-trophy.vercel.app/?username=Naitik-xd&theme=tokyonight&no-bg=true&no-frame=true&margin-w=15&margin-h=15" alt="Trophies" />
   </a>
 </div>
 
