@@ -65,10 +65,6 @@ const naitik = {
   <a href="https://github.com/Naitik-xd">
     <img src="https://github-readme-activity-graph.vercel.app/graph?username=Naitik-xd&bg_color=0D1117&color=FF6B00&line=FFB800&point=FFFFFF&area=true&hide_border=true" alt="Activity Graph" width="85%" />
   </a>
-  <br><br>
-  <a href="https://github.com/Naitik-xd">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=Naitik-xd&theme=dark&hide_border=true&ring=FF6B00&fire=FFB800" alt="GitHub Streak" />
-  </a>
 </div>
 
 <br>
