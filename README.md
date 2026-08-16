@@ -99,26 +99,24 @@ const naitik = {
 <table>
   <tr>
     <td width="50%" align="center">
-      <h3>🌟 <a href="https://github.com/Naitik-xd">Proof of Work</a></h3>
-      <p>SaaS 3D galaxy dashboard for showcasing competition wins and certs.</p>
-      <p><code>React</code> <code>Supabase</code> <code>Gemini</code> <code>Three.js</code></p>
-    </td>
-    <td width="50%" align="center">
-      <h3>🗺️ <a href="https://github.com/Naitik-xd/Hackathon-2">StageMap</a></h3>
+      <h3>🗺️ <a href="https://na1t1k-hackathon3.vercel.app">StageMap</a></h3>
       <p>Hyperlocal event discovery platform for tier-2/3 India.</p>
-      <p><code>Supabase</code> <code>Leaflet.js</code> <code>Gemini 2.0</code></p>
+      <p><code>Supabase</code> <code>Leaflet.js</code> <code>Gemini 2.5</code></p>
     </td>
-  </tr>
-  <tr>
     <td width="50%" align="center">
       <h3>💍 <a href="https://luminae-bay.vercel.app">LUMINAE</a></h3>
       <p>Delhi bridal booking ecosystem + AI chatbot LUMI.</p>
       <p><code>Supabase</code> <code>Gemini</code> <code>Resend</code></p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" align="center">
       <h3>🎨 <a href="https://na1t1k.vercel.app">Portfolio (3D Web)</a></h3>
       <p>Immersive Three.js particles + "Ask Naitik" AI chatbot.</p>
       <p><code>React</code> <code>GSAP</code> <code>Gemini</code></p>
+    </td>
+    <td width="50%" align="center">
+      <!-- Empty space for layout balance -->
     </td>
   </tr>
 </table>
