@@ -103,7 +103,7 @@ const naitik = {
 
 ### 🏆 **Achievements & Milestones**
 
-> 🥇 **HackDevengers 10** — Built StageMap <br>
+> 🥇 **HackDevengers 1.0** — Built StageMap <br>
 > 🎖️ **MDI Gurugram Photography** — Ranked 4th out of 135 entries <br>
 > 🌩️ **Google Cloud Skills Boost** — Gold League · 100+ Badges <br>
 > 🚀 **SuperXgen AI Startup Buildathon 2026** — Built LUMINAE
