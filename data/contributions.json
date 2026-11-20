@@ -2,7 +2,7 @@
   "username": "Naitik-xd",
   "updated_at": "2026-11-20",
   "total": 326,
-  "active_days": 71,
+  "active_days": 70,
   "current_streak": 1,
   "longest_streak": 5,
   "busiest_day": "Oct 10",
@@ -56,7 +56,7 @@
     {
       "month": "Sep",
       "ym": "2026-09",
-      "count": 38
+      "count": 37
     },
     {
       "month": "Oct",
@@ -66,7 +66,7 @@
     {
       "month": "Nov",
       "ym": "2026-11",
-      "count": 28
+      "count": 29
     }
   ],
   "days": [
@@ -1577,8 +1577,8 @@
     },
     {
       "date": "2026-09-19",
-      "count": 1,
-      "level": 1
+      "count": 0,
+      "level": 0
     },
     {
       "date": "2026-09-20",
@@ -1887,7 +1887,7 @@
     },
     {
       "date": "2026-11-20",
-      "count": 9,
+      "count": 10,
       "level": 4
     }
   ]
