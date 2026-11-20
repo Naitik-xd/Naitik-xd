@@ -311,7 +311,7 @@ def main():
         "cards/activity.svg": render_activity(data),
         "cards/tile-build.svg": render_tile("BUILD", "Web & AI Apps", "na1t1k.vercel.app", 10, "+", BLUE, 1.15),
         "cards/tile-connect.svg": render_tile("COMMITS", "This Year", "linkedin.com/in/na1t1k", data["total"], "", RED, 1.28),
-        "cards/tile-cloud.svg": render_tile("STREAK", "Longest Streak", "x.com/NA1T1Kxd", data["longest_streak"], "d", YELLOW, 1.40),
+        "cards/tile-cloud.svg": render_tile("STREAK", "Longest Streak", "https://g.dev/na1t1k", data["longest_streak"], "d", YELLOW, 1.40),
         "cards/projects.svg": render_projects(),
     }
 
