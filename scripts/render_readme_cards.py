@@ -1,8 +1,9 @@
+import base64
 import html
 import json
-import math
 import os
-from PIL import Image, ImageEnhance, ImageFilter, ImageOps
+from io import BytesIO
+from PIL import Image
 
 STATIC = os.environ.get("STATIC", "0") == "1"
 
@@ -52,10 +53,6 @@ COMMON_CSS = f"""
     0%, 100% {{ transform: translateX(0); }}
     50%      {{ transform: translateX(4px); }}
   }}
-  @keyframes rowPrint {{
-    from {{ opacity: 0; }}
-    to   {{ opacity: 1; }}
-  }}
   @media (prefers-reduced-motion: reduce) {{
     * {{ animation: none !important; opacity: 1 !important; transform: none !important; }}
   }}
@@ -71,62 +68,34 @@ def load_data():
         return json.load(f)
 
 
-def face_to_ascii_lines(img_path="source-photo.png", cols=88, rows=52):
-    """High-res sharpened face-only ASCII portrait with clean outer fade."""
+def face_to_base64(img_path="source-photo.png", size=260):
+    """Square-crops only the face & hair from source-photo.png and encodes as base64 JPEG."""
     if not os.path.exists(img_path):
-        return ["   [ upload source-photo.png ]"]
+        return ""
 
-    img = Image.open(img_path).convert("L")
+    img = Image.open(img_path).convert("RGB")
     w, h = img.size
 
-    # Tight face + hair crop
-    crop_box = (int(w * 0.33), int(h * 0.22), int(w * 0.99), int(h * 0.58))
-    face = img.crop(crop_box)
-    face = ImageOps.autocontrast(face, cutoff=2)
-    face = face.filter(ImageFilter.SHARPEN)
-    face = ImageEnhance.Contrast(face).enhance(1.65)
-    face = face.resize((cols, rows), Image.Resampling.LANCZOS)
+    # Square crop centered tightly on the face & hair (zero stretching)
+    side = int(w * 0.66)
+    cx = int(w * 0.66)
+    cy = int(h * 0.39)
 
-    # Richer character ramp for crisp glasses, eyes, and smile
-    chars = "@#W$9876543210?!abc;:+=-,._ "
-    pixels = face.load()
-    lines = []
+    left = max(0, min(w - side, cx - side // 2))
+    top = max(0, min(h - side, cy - side // 2))
+    face = img.crop((left, top, left + side, top + side))
+    face = face.resize((size, size), Image.Resampling.LANCZOS)
 
-    cx, cy = cols / 2.0, rows / 2.0
-    rx, ry = cols * 0.49, rows * 0.49
-
-    for y in range(rows):
-        row_chars = []
-        for x in range(cols):
-            dx = (x - cx) / rx
-            dy = (y - cy) / ry
-            dist = math.sqrt(dx * dx + dy * dy)
-            val = pixels[x, y]
-            if dist > 0.96:
-                val = 255
-            elif dist > 0.80:
-                blend = (dist - 0.80) / 0.16
-                val = int(val * (1 - blend) + 255 * blend)
-
-            idx = min(len(chars) - 1, int(val / 256 * len(chars)))
-            row_chars.append(chars[idx])
-        lines.append("".join(row_chars))
-    return lines
+    buf = BytesIO()
+    face.save(buf, format="JPEG", quality=92)
+    return base64.b64encode(buf.getvalue()).decode("ascii")
 
 
 def render_hero():
-    ascii_lines = face_to_ascii_lines()
-    ascii_svg = []
-    for i, line in enumerate(ascii_lines):
-        delay = 0 if STATIC else round(0.12 + i * 0.016, 3)
-        style = "" if STATIC else f"opacity:0;animation:rowPrint 0.06s ease forwards {delay}s;"
-        ascii_svg.append(
-            f'<text x="530" y="{28 + i * 4.6:.1f}" class="mono" font-size="4.3" '
-            f'fill="{INK}" xml:space="preserve" style="{style}">{esc(line)}</text>'
-        )
-
+    b64_face = face_to_base64()
     anim_title = "" if STATIC else "opacity:0;animation:fadeUp 0.6s ease forwards 0.1s;"
     anim_sub = "" if STATIC else "opacity:0;animation:fadeUp 0.6s ease forwards 0.25s;"
+    anim_face = "" if STATIC else "opacity:0;transform-box:fill-box;transform-origin:center;animation:popIn 0.65s cubic-bezier(0.22,1,0.36,1) forwards 0.2s;"
     anim_dot = "" if STATIC else "transform-box:fill-box;transform-origin:center;animation:pulseDot 2.2s ease-in-out infinite;"
     shine_anim = (
         ""
@@ -134,8 +103,23 @@ def render_hero():
         else '<animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="2 0" dur="4s" repeatCount="indefinite"/>'
     )
 
+    portrait_block = (
+        f"""
+  <g style="{anim_face}">
+    <circle cx="672" cy="142" r="106" fill="{PAPER_ALT}" stroke="{BORDER}" stroke-width="1.5"/>
+    <circle cx="672" cy="142" r="100" fill="none" stroke="{BLUE}" stroke-width="2" stroke-dasharray="6 5" opacity="0.55"/>
+    <image href="data:image/jpeg;base64,{b64_face}" x="576" y="46" width="192" height="192" clip-path="url(#faceClip)" preserveAspectRatio="xMidYMid slice"/>
+    <circle cx="672" cy="142" r="96" fill="none" stroke="{INK}" stroke-width="1.5" opacity="0.2"/>
+  </g>"""
+        if b64_face
+        else ""
+    )
+
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 285" width="840" height="285">
   <defs>
+    <clipPath id="faceClip">
+      <circle cx="672" cy="142" r="96"/>
+    </clipPath>
     <linearGradient id="inkShine" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="{INK}"/>
       <stop offset="42%" stop-color="{INK}"/>
@@ -165,8 +149,8 @@ def render_hero():
     <text x="36" y="262" class="mono" font-size="11" fill="{BLUE}">na1t1k.vercel.app  ·  @Naitik-xd</text>
   </g>
 
-  <line x1="505" y1="24" x2="505" y2="261" stroke="{BORDER}" stroke-dasharray="3 4"/>
-  <g>{''.join(ascii_svg)}</g>
+  <line x1="518" y1="28" x2="518" y2="257" stroke="{BORDER}" stroke-dasharray="3 4"/>
+  {portrait_block}
 </svg>"""
 
 
