@@ -19,4 +19,3 @@
 <p align="center">
   <a href="https://github.com/Naitik-xd?tab=repositories"><img src="./cards/projects.svg" width="100%" alt="Featured Builds" /></a>
 </p>
-
