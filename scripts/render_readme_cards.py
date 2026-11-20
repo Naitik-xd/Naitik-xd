@@ -286,16 +286,15 @@ def render_projects():
         style = "" if STATIC else f"opacity:0;animation:fadeUp 0.5s ease forwards {delay}s;"
         rows.append(f"""
         <g style="{style}">
-          <rect x="{x}" y="54" width="248" height="82" rx="10" fill="{PAPER_ALT}" stroke="{BORDER}"/>
+          <rect x="{x}" y="54" width="248" height="68" rx="10" fill="{PAPER_ALT}" stroke="{BORDER}"/>
           <circle cx="{x + 18}" cy="76" r="4.5" fill="{color}"/>
           <text x="{x + 30}" y="80" class="serif" font-size="17" fill="{INK}">{esc(name)}</text>
           <text x="{x + 16}" y="106" class="sans" font-size="11.5" fill="{INK_MUTED}">{esc(desc)}</text>
-          <text x="{x + 16}" y="124" class="mono" font-size="10" fill="{color}">LIVE PROJECT ↗</text>
         </g>""")
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 160" width="840" height="160">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 146" width="840" height="146">
   <style>{COMMON_CSS}</style>
-  <rect x="0.5" y="0.5" width="839" height="159" rx="14" fill="{PAPER}" stroke="{BORDER}"/>
+  <rect x="0.5" y="0.5" width="839" height="145" rx="14" fill="{PAPER}" stroke="{BORDER}"/>
   <text x="28" y="36" class="serif" font-size="20" fill="{INK}">Featured Builds</text>
   {''.join(rows)}
 </svg>"""
