@@ -48,14 +48,14 @@
           <rect x="28" y="54" width="248" height="82" rx="10" fill="#F3EFE9" stroke="#E5E0D8"/>
           <circle cx="46" cy="76" r="4.5" fill="#2563EB"/>
           <text x="58" y="80" class="serif" font-size="17" fill="#1A1918">CurriculumCraft AI</text>
-          <text x="44" y="106" class="sans" font-size="11.5" fill="#6E6A63">Gemma 4 CBSE paper & lesson generator</text>
+          <text x="44" y="106" class="sans" font-size="11.5" fill="#6E6A63">Gemma 4 CBSE paper &amp; lesson generator</text>
           <text x="44" y="124" class="mono" font-size="10" fill="#2563EB">LIVE PROJECT ↗</text>
         </g>
         <g style="opacity:0;animation:fadeUp 0.5s ease forwards 1.52s;">
           <rect x="296" y="54" width="248" height="82" rx="10" fill="#F3EFE9" stroke="#E5E0D8"/>
           <circle cx="314" cy="76" r="4.5" fill="#DC2626"/>
           <text x="326" y="80" class="serif" font-size="17" fill="#1A1918">Luminae</text>
-          <text x="312" y="106" class="sans" font-size="11.5" fill="#6E6A63">Bridal & salon marketplace · Supabase</text>
+          <text x="312" y="106" class="sans" font-size="11.5" fill="#6E6A63">Bridal &amp; salon marketplace · Supabase</text>
           <text x="312" y="124" class="mono" font-size="10" fill="#DC2626">LIVE PROJECT ↗</text>
         </g>
         <g style="opacity:0;animation:fadeUp 0.5s ease forwards 1.64s;">
