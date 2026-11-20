@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 285" width="840" height="285">
+  <defs>
+    <linearGradient id="inkShine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A1918"/>
+      <stop offset="42%" stop-color="#1A1918"/>
+      <stop offset="50%" stop-color="#2563EB"/>
+      <stop offset="58%" stop-color="#1A1918"/>
+      <stop offset="100%" stop-color="#1A1918"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="2 0" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+  <style>
+  .serif { font-family: Georgia, 'Times New Roman', serif; }
+  .sans  { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+  .mono  { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes popIn {
+    0%   { opacity: 0; transform: scale(0.6); }
+    70%  { opacity: 1; transform: scale(1.08); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  @keyframes barGrow {
+    from { transform: scaleY(0); }
+    to   { transform: scaleY(1); }
+  }
+  @keyframes pulseDot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%      { opacity: 0.45; transform: scale(1.35); }
+  }
+  @keyframes tileSpring {
+    0%   { opacity: 0; transform: translateY(20px) rotate(-1.5deg); }
+    70%  { opacity: 1; transform: translateY(-3px) rotate(0.4deg); }
+    100% { opacity: 1; transform: translateY(0) rotate(0deg); }
+  }
+  @keyframes ringPulse {
+    0%   { opacity: 0.5; transform: scale(0.8); }
+    100% { opacity: 0; transform: scale(1.7); }
+  }
+  @keyframes arrowNudge {
+    0%, 100% { transform: translateX(0); }
+    50%      { transform: translateX(4px); }
+  }
+  @keyframes rowPrint {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; opacity: 1 !important; transform: none !important; }
+  }
+</style>
+  <rect x="0.5" y="0.5" width="839" height="284" rx="14" fill="#FAF8F5" stroke="#E5E0D8"/>
+
+  <!-- Status badge -->
+  <g style="opacity:0;animation:fadeUp 0.6s ease forwards 0.1s;">
+    <rect x="36" y="34" width="210" height="26" rx="13" fill="#F3EFE9" stroke="#E5E0D8"/>
+    <circle cx="52" cy="47" r="4" fill="#2563EB" style="transform-box:fill-box;transform-origin:center;animation:pulseDot 2.2s ease-in-out infinite;"/>
+    <text x="64" y="51" class="mono" font-size="10.5" fill="#6E6A63">AI WEB DEVELOPER · INDIA</text>
+  </g>
+
+  <!-- Name -->
+  <g style="opacity:0;animation:fadeUp 0.6s ease forwards 0.1s;">
+    <text x="36" y="122" class="serif" font-size="54" fill="#1A1918" letter-spacing="-1">Naitik</text>
+    <text x="36" y="176" class="serif" font-size="54" font-style="italic" fill="url(#inkShine)" letter-spacing="-1">Agarwal.</text>
+  </g>
+
+  <!-- Bio -->
+  <g style="opacity:0;animation:fadeUp 0.6s ease forwards 0.25s;">
+    <text x="36" y="214" class="sans" font-size="14.5" fill="#6E6A63">Building full-stack AI web apps, open-weight tools,</text>
+    <text x="36" y="234" class="sans" font-size="14.5" fill="#6E6A63">and clean interactive experiences.</text>
+    <text x="36" y="262" class="mono" font-size="11" fill="#2563EB">na1t1k.vercel.app  ·  @Naitik-xd</text>
+  </g>
+
+  <!-- Subtle divider -->
+  <line x1="505" y1="28" x2="505" y2="257" stroke="#E5E0D8" stroke-dasharray="3 4"/>
+
+  <!-- Cropped Face ASCII Portrait -->
+  <g><text x="530" y="42.0" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.15s;">                                                      </text><text x="530" y="49.2" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.175s;">                                                      </text><text x="530" y="56.4" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.2s;">                         .....                        </text><text x="530" y="63.6" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.225s;">                  ..:::---------::..                  </text><text x="530" y="70.8" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.25s;">               ..:-==++***+++++++==--:.               </text><text x="530" y="78.0" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.275s;">             .:-=++*#%%%%##########**+=-:.            </text><text x="530" y="85.2" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.3s;">           .:-+*#%%%%%%%%%%####%%%%%%#**=-:.          </text><text x="530" y="92.4" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.325s;">          :-=*#%@@@@%%%%%@%%%%%###%%%%%#*+=-:         </text><text x="530" y="99.6" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.35s;">        .:=+#%@@@@@@@@@@@@%%%%%%%@%####%##*+-:.       </text><text x="530" y="106.8" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.375s;">       .-=*#@@@@@@@@@%%%%%%%%%%@@%###%%%%%%+=-:.      </text><text x="530" y="114.0" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.4s;">      .:=*#@@@@@@@@@@@@@@@@@@@@@%%%@@%@%=%%#*=-.      </text><text x="530" y="121.2" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.425s;">      :=+#@@@@@@@@@@@@@@@@%%%@@%@@@@%#=-#@%%%+=-.     </text><text x="530" y="128.4" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.45s;">     .-+*%@@@@@@@@@@@@@%#%%%@@%@%%*+-:=##+-+@#+=-.    </text><text x="530" y="135.6" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.475s;">     :=*#@@@@@@@@*+++==--=======-:...::.   :*@*=-:    </text><text x="530" y="142.8" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.5s;">    .:=*%@@@@@@#+++**###**+=:.......::::::..:%%*=:.   </text><text x="530" y="150.0" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.525s;">    .-+*%@@@@@%####*+++*####-.....:####*++==:=%*=:.   </text><text x="530" y="157.2" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.55s;">    .:+#@@@@@@%%+--===+++==+***+=+*++=--::::-=*+=-.   </text><text x="530" y="164.4" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.575s;">     :+*%@@@@#*#-=+-*@#*+=-:*%*+##:-=**+=-.  :*==-.   </text><text x="530" y="171.6" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.6s;">     :--=+@@@++%:-: -+++.  :#=. -#..:*#+-.:: -*+=:    </text><text x="530" y="178.8" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.625s;">      :-=+%@@+=*+....... .-#=:-:.*=  ...     =*+:     </text><text x="530" y="186.0" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.65s;">      ::-+*%%+===+++=====++-:--...++-:..   .--+=.     </text><text x="530" y="193.2" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.675s;">      .:-=+=*===::------::.:--:.:: :-===---:..=:      </text><text x="530" y="200.4" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.7s;">       .:-=+-===::::::.....:-----..          ::.      </text><text x="530" y="207.6" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.725s;">        .:--++==-:::::..........             .        </text><text x="530" y="214.8" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.75s;">         .:=#*-=-::::.:=-:::::......:.      .         </text><text x="530" y="222.0" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.775s;">          .-=++-=-:::..:-=:......:-=:.                </text><text x="530" y="229.2" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.8s;">           .:-+=---:::....::--:::..                   </text><text x="530" y="236.4" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.825s;">             .:-=-::::::...::--:.                     </text><text x="530" y="243.6" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.85s;">                ::.:::......                          </text><text x="530" y="250.8" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.875s;">                    ......                            </text><text x="530" y="258.0" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.9s;">                                                      </text><text x="530" y="265.2" class="mono" font-size="6.4" fill="#1A1918" xml:space="preserve" style="opacity:0;animation:rowPrint 0.08s ease forwards 0.925s;">                                                      </text></g>
+</svg>
